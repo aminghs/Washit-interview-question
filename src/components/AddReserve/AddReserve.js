@@ -21,10 +21,10 @@ function AddReserve({ onAdd }) {
 }
 
   return (
-    <div className="container">
+    <div>
           <img src={logo} className="App-logo" alt="logo" />
-          <form className="add-product-form" onSubmit={submitForm}>
-            <input type="text" placeholder="username" 
+          <form onSubmit={submitForm}>
+            <input type="text" placeholder="name" 
                     value={name}
                     onChange={(e) => setName(e.target.value)} />
             <input type="datetime-local" min={getNow()}  onChange={(e) => setDate(e.target.value)} />
@@ -35,7 +35,7 @@ function AddReserve({ onAdd }) {
               <option>Laundry: 40 degrees, 60 minutes</option>
               <option>Hand wash: 30 degrees, 20 minutes</option>
             </select>
-            <select name="machine" id="machine" onChange={(e) => setMachine(e.target.value)}>
+            <select name="machine" onChange={(e) => setMachine(e.target.value)}>
                 <option value="">Select Machine</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
