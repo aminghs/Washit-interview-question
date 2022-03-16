@@ -27,7 +27,10 @@ function AddReserve({ onAdd }) {
             <input type="text" placeholder="name" 
                     value={name}
                     onChange={(e) => setName(e.target.value)} />
-            <input type="datetime-local" min={getNow()}  onChange={(e) => setDate(e.target.value)} />
+                    
+            <input type="datetime-local" min={getNow()}  
+                    onChange={(e) => setDate(e.target.value)} />
+
             <select onChange={(e) => setType(e.target.value)}>
               <option>Select type</option>
               <option>Kitchen wash: 60 degrees, 90 minutes</option>

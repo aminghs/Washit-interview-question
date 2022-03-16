@@ -9,19 +9,11 @@
       "id": 1
     },
     {
-      "name": "Maral Javadzadeh",
-      "time": "07:19",
+      "name": "Christopher Carey",
       "type": "Kitchen wash: 60 degrees, 90 minutes",
-      "date": "2022-03-25T07:16",
-      "machine": "3",
+      "date": "2022-03-16T10:10",
+      "machine": "2",
       "id": 2
-    },
-    {
-      "name": "Amin Gholamisani",
-      "type": "Kitchen wash: 60 degrees, 90 minutes",
-      "date": "2022-03-18T09:55",
-      "machine": "1",
-      "id": 3
     }
   ]
 }

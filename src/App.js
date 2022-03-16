@@ -28,7 +28,6 @@ function App() {
     })
 
     const responseData = await response.json()
-
     setReservations([...reservations, responseData])
   }
 
