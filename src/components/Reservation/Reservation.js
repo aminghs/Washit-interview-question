@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Reservation = ({ product, onDelete }) => {
+const Reservation = ({ reservation, onDelete }) => {
   return (
     <div>
-    <div>Name: {product.name}</div>
-    <div>Type: {product.type}</div>
-    <div>Date: {product.date}</div>
-    <div>Machine number: {product.machine}</div>
+    <div>Name: {reservation.name}</div>
+    <div>Type: {reservation.type}</div>
+    <div>Date: {reservation.date}</div>
+    <div>Machine number: {reservation.machine}</div>
 
     <div>
-      <button onClick={() => onDelete(product.id)}>
+      <button onClick={() => onDelete(reservation.id)}>
         Delete
       </button>
     </div>

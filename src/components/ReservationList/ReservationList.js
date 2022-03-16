@@ -1,10 +1,10 @@
 import Reservation from "../Reservation/Reservation"
 
-const ReservationList = ({products, onDelete}) => {
+const ReservationList = ({reservations, onDelete}) => {
   return (
     <div>
-      {products?.map((item) => {
-        return <Reservation key={item.id} product={item} onDelete={onDelete} />
+      {reservations?.map((item) => {
+        return <Reservation key={item.id} reservation={item} onDelete={onDelete} />
       })}
   </div>
   )

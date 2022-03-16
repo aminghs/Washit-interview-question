@@ -4,22 +4,22 @@ import ReservationList from './components/ReservationList/ReservationList';
 import { useEffect, useState} from 'react';
 
 function App() {
-  const [products, setProducts] = useState([])
+  const [reservations, setReservations] = useState([])
 
   useEffect(() => {
     const sendRequest = async () => {
-      const response = await fetch('http://localhost:8000/products')
+      const response = await fetch('http://localhost:8000/reservations')
 
       const responoseData = await response.json()
 
-      setProducts(responoseData)
+      setReservations(responoseData)
     }
 
     sendRequest()
   }, [])
 
-  const addProduct = async (name) => {
-    const response = await fetch('http://localhost:8000/products', {
+  const addReservation = async (name) => {
+    const response = await fetch('http://localhost:8000/reservations', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -29,21 +29,21 @@ function App() {
 
     const responseData = await response.json()
 
-    setProducts([...products, responseData])
+    setReservations([...reservations, responseData])
   }
 
-  const deleteProduct = async (id) => {
-    await fetch(`http://localhost:8000/products/${id}`, {
+  const deleteReservation = async (id) => {
+    await fetch(`http://localhost:8000/reservations/${id}`, {
       method: 'DELETE',
     })
 
-    setProducts(products.filter((item) => item.id !== id))
+    setReservations(reservations.filter((item) => item.id !== id))
   }
 
   return (
     <div className="container">WashIt
-      <AddReserve onAdd={addProduct} />
-      <ReservationList products={products} onDelete={deleteProduct} />
+      <AddReserve onAdd={addReservation} />
+      <ReservationList reservations={reservations} onDelete={deleteReservation} />
     </div>
   )
 }
