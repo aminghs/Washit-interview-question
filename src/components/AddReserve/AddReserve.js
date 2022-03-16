@@ -4,16 +4,16 @@ import logo from './icon.png'
 
 function AddReserve({ onAdd }) {
   const [name, setName] = useState('')
-  const [time, setTime] = useState('')
   const [type, setType] = useState('')
   const [date, setDate] = useState('')
   const [machine, setMachine] = useState('')
 
   const submitForm = (event) => {
     event.preventDefault()
-      onAdd({ name, time, type, date, machine })
+      onAdd({ name, type, date, machine })
       setName('');
   }
+
 
   const getNow = () => {
     var d = new Date();
@@ -28,7 +28,6 @@ function AddReserve({ onAdd }) {
                     value={name}
                     onChange={(e) => setName(e.target.value)} />
             <input type="datetime-local" min={getNow()}  onChange={(e) => setDate(e.target.value)} />
-            <input type="time" onChange={(e) => setTime(e.target.value)} />
             <select onChange={(e) => setType(e.target.value)}>
               <option>Select type</option>
               <option>Kitchen wash: 60 degrees, 90 minutes</option>

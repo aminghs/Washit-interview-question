@@ -1,3 +1,20 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": "Amin Gholamisani",
+      "time": "07:19",
+      "type": "Kitchen wash: 60 degrees, 90 minutes",
+      "date": "2022-03-25T07:16",
+      "machine": "3",
+      "id": 1
+    },
+    {
+      "name": "Maral Javadzadeh",
+      "time": "07:19",
+      "type": "Kitchen wash: 60 degrees, 90 minutes",
+      "date": "2022-03-25T07:16",
+      "machine": "3",
+      "id": 2
+    }
+  ]
 }
