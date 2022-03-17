@@ -2,69 +2,49 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+WashIt er et vaskeri som ønsker seg et fleksibelt og effektivt system slik at sluttbrukerne kan reservere vasketid og få varsel når en vaskemaskin blir ledig. 
 
-In the project directory, you can run:
+Idag har WashIt 12 vaskemaskiner med 3 typer vaskeprogram, som er best definert av temperatur og lengde på vaskeprogrammet: 
 
-### `npm start`
+Kokvask: 60 grader, 90 minutter 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tøyvask: 40 grader, 60 minutter 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Håndvask: 30 grader, 20 minutter 
 
-### `npm test`
+Idag bruker WashIt et manuelt system hvor man skriver seg opp på en liste og reserverer en vaskemaskin for en time av gangen. Dette systemet kan gi mye dødtid hvor vaskemaskinene ikke brukes, for eksempel hvis sluttbrukerne ikke bruker sin reserverte vasketid, eller hvis de setter på et vaskeprogram som tar kortere tid enn den tiden de har reservert.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+WashIt ønsker et system hvor 
 
-### `npm run build`
+sluttbrukerne skal kunne reservere vaskemaskiner ved å angi type vask 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+sluttbrukerne skal kunne enkelt avlyse reservasjon 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+sluttbrukere skal kunne sette seg på venteliste og motta varsel hvis en vaskemaskin blir ledig for deres type vask. 
+ 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Del 1: 
 
-### `npm run eject`
+Du skal utvikle en applikasjon som inneholder de nødvendige komponentene som beskrevet ovenfor, og som er nødvendig for at denne skal fungere. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Del 2: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+WashIt vil utvide applikasjonen til å inkludere flere tjenester. Eksempelvis:  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Identifisering av sluttbruker, slik at kun den som har reservert vaskemaskinen kan bruke den. 
 
-## Learn More
+Innsjekk for sluttbruker. Reservasjonen kanselleres etter 15 minutter hvis sluttbrukeren ikke har sjekket inn eller startet maskinen. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Reservasjon av tørketromler 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 
 
-### Code Splitting
+Beskriv hvordan du ser for deg å utvide applikasjonen med funksjonaliteten beskrevet ovenfor. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ 
 
-### Analyzing the Bundle Size
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+NB! Du står fritt til å velge selv hvordan applikasjonen skal utvikles, plattform, programmeringsspråk, etc. Ettersom det ikke er spesifisert et design vil funksjonalitet prioriteres høyere enn visuell utforming i denne oppgaven. 
